@@ -1,5 +1,5 @@
-from mvc_alunos.models.model import Aluno
-import mvc_alunos.views.view as view
+from mvc_alunos.models.aluno import Aluno
+import view
 
 class AlunoController:
     def cadastrar(self):
@@ -8,3 +8,7 @@ class AlunoController:
         aluno = Aluno(nome, idade)
         aluno.matricular_aluno() 
         view.mostrar_aluno(aluno)
+
+    
+        
+        

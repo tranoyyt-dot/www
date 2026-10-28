@@ -1,0 +1,22 @@
+<html>
+     {{alunos}}
+   <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            {% for aluno in alunos %}
+            <tr>
+                <td>{{aluno[0]}}</td>
+                <td>{{aluno[1]}}</td>
+                <td>{{aluno[2]}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+   </table>
+</html>
